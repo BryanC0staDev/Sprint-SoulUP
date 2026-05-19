@@ -40,3 +40,16 @@ botaoEscuro.addEventListener("click", escuro)
 
 let botaoClaro = document.getElementById("luz")
 botaoClaro.addEventListener("click", claro)
+
+const botaoMenu = document.getElementById("menu-toggle");
+const menu = document.querySelector(".menu");
+
+botaoMenu.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+
+    if (menu.classList.contains("ativo")) {
+        botaoMenu.textContent = "✖";
+    } else {
+        botaoMenu.textContent = "☰";
+    }
+});

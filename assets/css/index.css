@@ -10,6 +10,14 @@
   align-items: center; 
   text-align: center; 
 }
+/* botão hamburguer */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 /* Título principal */
 .titulo h1 {
@@ -280,6 +288,26 @@
         text-align: center;
         padding: 1rem;
     }
+
+    .menu-toggle {
+    display: block;
+}
+
+.menu {
+    display: none;
+    width: 100%;
+}
+
+.menu.ativo {
+    display: block;
+}
+
+.menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
 }
 
 /* Celulares menores */
